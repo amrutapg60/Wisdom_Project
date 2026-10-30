@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 3 - Registration Designs</title>
+  <link rel="stylesheet" href="assignment3.css">
+</head>
+<body>
+  <main class="page">
+    <section class="compact-card">
+      <h1>Registration</h1>
+      <div class="rule"></div>
+      <div class="choice"><label><input type="radio" name="type" checked> Personal</label><label><input type="radio" name="type"> Company</label></div>
+      <form onsubmit="event.preventDefault(); alert('Registered successfully!');">
+        <div class="input-row"><span>✉</span><input type="email" placeholder="Email" required></div>
+        <div class="input-row"><span>♟</span><input type="text" placeholder="Name" required></div>
+        <div class="input-row"><span>⬟</span><input type="password" placeholder="Password" required></div>
+        <div class="choice gender"><label><input type="radio" name="gender" checked> Male</label><label><input type="radio" name="gender"> Female</label></div>
+        <div class="bottom-row"><small>By clicking Register, you agree on our <a href="#">terms and condition</a>.</small><button type="submit">Register</button></div>
+      </form>
+    </section>
+
+    <section class="split-card">
+      <div class="welcome">
+        <h2>Welcome Back!</h2>
+        <p>Provide your personal details to use all features</p>
+        <button type="button" class="sign-in">SIGN IN</button>
+      </div>
+      <div class="signup">
+        <h2>Register With</h2>
+        <div class="socials"><button type="button">G+</button><button type="button">f</button><button type="button">◎</button><button type="button">in</button></div>
+        <h3>OR</h3>
+        <p>Fill Out The Following Info For Registration</p>
+        <form onsubmit="event.preventDefault(); alert('Sign up submitted!');">
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email" required>
+          <input type="password" placeholder="Password" required>
+          <button class="sign-up" type="submit">SIGN UP</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
