@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial;
+    background: white;
+}
+
+.page {
+    width: 900px;
+    max-width: 100%;
+    margin: auto;
+}
+
+/* First Card */
+.compact-card {
+    width: 330px;
+    margin: 20px;
+    padding: 20px;
+    background: #ececec;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.compact-card h1 {
+    text-align: center;
+    font-size: 28px;
+}
+
+.choice, .bottom-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.input-row {
+    display: flex;
+    margin: 12px 0;
+}
+
+.input-row span {
+    padding: 10px;
+    background: #3d5eaf;
+    color: white;
+}
+
+.input-row input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.bottom-row button, .sign-up {
+    padding: 10px 20px;
+    background: #3d5eaf;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Second Card */
+.split-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 450px;
+    padding: 20px;
+    border-radius: 25px;
+    background: linear-gradient(115deg, #386b40, #9aa90c);
+}
+
+.welcome {
+    background: #004d59;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in {
+    padding: 10px 30px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.signup {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.socials button {
+    padding: 10px;
+    background: white;
+    border: 1px solid #8aaeb2;
+}
+
+.signup form input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    background: #ddd;
+    border: none;
+}
+
+.sign-up {
+    background: #b9c500;
+}
+
+/* Responsive Design */
+@media (max-width: 650px) {
+    .compact-card {
+        margin: 20px auto;
+    }
+
+    .split-card {
+        grid-template-columns: 1fr;
+    }
+}
