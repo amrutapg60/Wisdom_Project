@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 2 - Login and Registration</title>
+  <link rel="stylesheet" href="assignment2.css">
+</head>
+<body>
+  <main class="page">
+    <section class="instagram">
+      <div class="promo">
+        <div class="insta-logo" aria-label="Instagram logo"><span></span></div>
+        <h2>See everyday moments from<br>your <em>close friends.</em></h2>
+        <div class="photo-stack" aria-hidden="true">
+          <div class="photo p1">✦</div><div class="photo p2">♡</div><div class="photo p3">☺</div>
+        </div>
+        <p class="app-store">App Store</p>
+      </div>
+      <div class="login-panel">
+        <h3>Log into Instagram</h3>
+        <form onsubmit="event.preventDefault(); alert('Login form submitted!');">
+          <input type="text" placeholder="Mobile number, username or email" aria-label="Username or email" required>
+          <input type="password" placeholder="Password" aria-label="Password" required>
+          <button class="login-btn" type="submit">Log in</button>
+        </form>
+        <a class="forgot" href="#">Forgot password?</a>
+        <button class="facebook" type="button">🔵 &nbsp;Log in with Facebook</button>
+        <button class="create" type="button">Create new account</button>
+      </div>
+    </section>
+
+    <section class="details-card">
+      <h2><span>Reg</span>istration</h2>
+      <p class="section-label">Personal Details</p>
+      <form class="details-grid" onsubmit="event.preventDefault(); alert('Details saved!');">
+        <label>Full Name<input type="text" placeholder="Enter your name" required></label>
+        <label>Date of Birth<input type="date" required></label>
+        <label>Email<input type="email" placeholder="Enter your email" required></label>
+        <label>Mobile number<input type="tel" placeholder="Enter mobile number" required></label>
+        <label>Gender<input type="text" placeholder="Enter your gender"></label>
+        <label>Occupation<input type="text" placeholder="Enter occupation"></label>
+        <p class="section-label full">Identity Details</p>
+        <label>ID Type<input type="text" placeholder="Enter ID type"></label>
+        <label>ID Number<input type="text" placeholder="Enter ID number"></label>
+        <label>Issue Authority<input type="text" placeholder="Enter issue department"></label>
+        <label>Issue Date<input type="date"></label>
+        <label>Issue State<input type="text" placeholder="Enter ID issue state"></label>
+        <label>Expiry Date<input type="date"></label>
+        <button class="next full" type="submit">Next &nbsp; →</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
