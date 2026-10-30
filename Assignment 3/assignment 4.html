@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 4 - School Championship</title>
+  <link rel="stylesheet" href="assignment4.css">
+</head>
+<body>
+  <main class="championship">
+    <h1>School Championship Registration Form</h1>
+    <form onsubmit="event.preventDefault(); alert('Championship registration submitted!');">
+      <label>School name:<span>*</span><input type="text" required></label>
+      <label>Schooler name:<span>*</span>
+        <div class="two-cols"><input type="text" placeholder="First" aria-label="Student first name" required><input type="text" placeholder="Last" aria-label="Student last name" required></div>
+      </label>
+      <label>Parent name:<span>*</span>
+        <div class="two-cols"><input type="text" placeholder="First" aria-label="Parent first name" required><input type="text" placeholder="Last" aria-label="Parent last name" required></div>
+      </label>
+      <label>Parent phone:<span>*</span><input type="tel" placeholder="### ### ####" required></label>
+      <label>Parent email:<span>*</span><input type="email" required></label>
+      <label>Preferred sport:<span>*</span>
+        <select required>
+          <option value="">Select a sport</option><option>Football</option><option>Basketball</option><option>Cricket</option><option>Badminton</option><option>Athletics</option><option>Volleyball</option>
+        </select>
+      </label>
+      <div class="verification"><p>Verification<span>*</span></p><label class="robot"><input type="checkbox" required> I'm not a robot <strong>↻</strong></label></div>
+      <button type="submit">➤ &nbsp; Submit</button>
+    </form>
+  </main>
+</body>
+</html>
