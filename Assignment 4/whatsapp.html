@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="01_WhatsApp navigation layout practice project">
+  <title>01_WhatsApp | Internship UI Practice</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- WhatsApp-style group conversation header -->
+<header class="chat-header">
+  <div class="conversation">
+    <div class="group-avatar" aria-hidden="true"><i class="fa-solid fa-user-group"></i></div>
+    <div class="conversation-details">
+      <h1>B101-WS-MERN-JFP</h1>
+      <p title="B101, B101Komal, B87, Swapneel, WS, WS, +91 755 869 3115, +91 87998 78829, +91 84592 37342">B101, B101Komal, B87, Swapneel, WS, WS, +91 755 869 3115, +91 87998 78829, +91 84592 37342</p>
+    </div>
+  </div>
+  <nav class="chat-actions" aria-label="Conversation actions">
+    <button class="add-list" type="button"><i class="fa-regular fa-rectangle-list"></i><span>Add to list</span><i class="fa-solid fa-chevron-down small"></i></button>
+    <div class="video-actions"><button class="icon-button" aria-label="Start video call" title="Video call"><i class="fa-solid fa-video"></i></button><button class="icon-button narrow" aria-label="Video options"><i class="fa-solid fa-caret-down"></i></button></div>
+    <span class="separator" aria-hidden="true"></span>
+    <button class="icon-button" id="searchButton" aria-label="Search conversation" title="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <button class="icon-button" id="moreButton" aria-label="More options" aria-expanded="false" title="More options"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+  </nav>
+  <div class="more-menu" id="moreMenu" hidden><button type="button">Group info</button><button type="button">Select messages</button><button type="button">Close menu</button></div>
+</header>
+<div class="search-panel" id="searchPanel" hidden><label for="messageSearch">Search this conversation</label><input id="messageSearch" type="search" placeholder="Search messages..."></div>
+</body>
+</html>
