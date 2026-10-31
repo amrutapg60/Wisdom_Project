@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: white;
+}
+
+/* LinkedIn Header */
+.linkedin-header {
+    background: white;
+    border-bottom: 1px solid #ddd;
+    margin: 20px;
+}
+
+.header-inner {
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 30px;
+}
+
+/* Logo and Search */
+.brand-search {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.linkedin-logo {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    background: #0a66c2;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 250px;
+    height: 41px;
+    padding: 10px;
+    border-radius: 22px;
+    background: #edf3f8;
+}
+
+.search-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+/* Navigation Menu */
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 100%;
+}
+
+.nav-item {
+    position: relative;
+    width: 87px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #666;
+    background: transparent;
+    border: none;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.nav-item i {
+    font-size: 22px;
+}
+
+.nav-item:hover, .nav-item.active {
+    color: #111;
+}
+
+.nav-item.active {
+    border-bottom: 2px solid #111;
+}
+
+/* Notification */
+.notification-count {
+    position: absolute;
+    top: 12px;
+    left: 52px;
+    background: #df0b17;
+    color: white;
+    border-radius: 12px;
+    padding: 3px 6px;
+    font-size: 11px;
+}
+
+.nav-divider {
+    border-left: 1px solid #ddd;
+    height: 45px;
+}
+
+.nav-item.business {
+    width: 112px;
+}
+
+.nav-item.premium {
+    width: 105px;
+}
+
+.nav-item.premium i {
+    color: #d7a128;
+}
+
+/* Profile Dropdown */
+.profile-dropdown {
+    position: absolute;
+    right: 200px;
+    top: 75px;
+    width: 190px;
+    padding: 16px;
+    background: white;
+    box-shadow: 0 5px 20px #0002;
+    border-radius: 7px;
+    z-index: 10;
+}
+
+.profile-dropdown[hidden] {
+    display: none;
+}
+
+.profile-dropdown a {
+    display: block;
+    padding-top: 12px;
+    color: #555;
+    text-decoration: none;
+}
+
+/* Tablet View */
+@media (max-width: 1200px) {
+    .header-inner {
+        padding: 0 18px;
+    }
+
+    .search-box {
+        width: 190px;
+    }
+
+    .nav-item {
+        width: 70px;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 850px) {
+    .header-inner {
+        height: auto;
+        padding: 14px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .main-nav {
+        width: 100%;
+        overflow-x: auto;
+        min-height: 66px;
+    }
+
+    .nav-item {
+        min-width: 80px;
+    }
+
+    .search-box {
+        width: 70vw;
+    }
+}
