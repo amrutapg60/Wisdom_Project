@@ -1,0 +1,138 @@
+:root {
+    --mint: #d4e8e5;
+    --teal: #006066;
+    --orange: #ff691e;
+    --ink: #242424;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.wisdom-header {
+    margin: 20px;
+    padding: 0 48px;
+    min-height: 72px;
+    background: var(--mint);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+/* Brand name */
+.brand {
+    color: var(--teal);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    min-width: 215px;
+}
+
+.brand strong {
+    font-size: 19px;
+}
+
+.brand small {
+    font-size: 13px;
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.navigation a {
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    color: var(--orange);
+}
+
+/* Contact button */
+.contact-button {
+    background: var(--orange);
+    color: white;
+    padding: 13px 24px;
+    border-radius: 28px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.contact-button:hover {
+    background: #e45612;
+}
+
+/* Mobile menu button */
+.mobile-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Tablet view */
+@media (max-width: 1150px) {
+    .wisdom-header {
+        padding: 12px 25px;
+        flex-wrap: wrap;
+    }
+
+    .navigation {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 700px) {
+    .wisdom-header {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .brand {
+        min-width: 0;
+    }
+
+    .brand strong {
+        font-size: 16px;
+    }
+
+    .mobile-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation.open {
+        display: flex;
+    }
+
+    .contact-button {
+        order: 4;
+    }
+}
