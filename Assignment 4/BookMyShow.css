@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #242424;
+    background: white;
+}
+
+/* Header */
+.site-header {
+    margin: 20px;
+}
+
+.header-top {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 4%;
+}
+
+/* Logo */
+.brand {
+    text-decoration: none;
+    color: #222;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.brand span {
+    color: #f84464;
+}
+
+/* Search Bar */
+.search-area {
+    width: 40%;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #888;
+}
+
+.search-area input {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+/* Header Buttons */
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.city-select, .hamburger {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.sign-in {
+    background: #f84464;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.sign-in:hover {
+    background: #db3654;
+}
+
+/* Navigation Bar */
+.header-bottom {
+    min-height: 37px;
+    background: #f2f2f2;
+    padding: 0 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-links, .other-links {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.header-bottom a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.header-bottom a:hover {
+    color: #f84464;
+}
+
+/* City Dropdown */
+.city-dropdown {
+    position: absolute;
+    right: 165px;
+    top: 60px;
+    width: 160px;
+    padding: 8px;
+    background: white;
+    box-shadow: 0 5px 15px #0002;
+}
+
+.city-dropdown[hidden] {
+    display: none;
+}
+
+.city-dropdown button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: white;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* Tablet View */
+@media (max-width: 950px) {
+    .header-top {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    .search-area {
+        width: 100%;
+        order: 3;
+    }
+
+    .header-bottom {
+        padding: 10px 20px;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 600px) {
+    .header-bottom {
+        display: none;
+        flex-direction: column;
+    }
+
+    .header-bottom.open {
+        display: flex;
+    }
+
+    .brand {
+        font-size: 22px;
+    }
+
+    .header-controls {
+        gap: 10px;
+    }
+}
