@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="02_LinkedIn navigation layout practice project">
+  <title>02_LinkedIn | Internship UI Practice</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Desktop LinkedIn-style primary navigation -->
+<header class="linkedin-header">
+  <div class="header-inner">
+    <div class="brand-search">
+      <a class="linkedin-logo" href="#home" aria-label="LinkedIn home">in</a>
+      <form class="search-box" role="search" onsubmit="return false">
+        <label for="linkedin-search"><i class="fa-solid fa-magnifying-glass"></i></label>
+        <input id="linkedin-search" type="search" placeholder="Search" aria-label="Search LinkedIn">
+      </form>
+    </div>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="nav-item active" href="#home"><i class="fa-solid fa-house"></i><span>Home</span></a>
+      <a class="nav-item" href="#network"><i class="fa-solid fa-user-group"></i><span class="notification-count network">5</span><span>My Network</span></a>
+      <a class="nav-item" href="#jobs"><i class="fa-solid fa-briefcase"></i><span>Jobs</span></a>
+      <a class="nav-item" href="#messaging"><i class="fa-solid fa-comment-dots"></i><span>Messaging</span></a>
+      <a class="nav-item" href="#notifications"><i class="fa-solid fa-bell"></i><span class="notification-count alerts">25</span><span>Notifications</span></a>
+      <button class="nav-item profile-menu" type="button" id="profileToggle" aria-expanded="false"><i class="fa-solid fa-circle-user"></i><span>Me <i class="fa-solid fa-caret-down tiny"></i></span></button>
+      <span class="nav-divider" aria-hidden="true"></span>
+      <a class="nav-item business" href="#business"><i class="fa-solid fa-grip"></i><span>For Business <i class="fa-solid fa-caret-down tiny"></i></span></a>
+      <a class="nav-item premium" href="#premium"><i class="fa-solid fa-square"></i><span>Try Premium</span></a>
+    </nav>
+  </div>
+  <div class="profile-dropdown" id="profileDropdown" hidden><strong>Account</strong><a href="#profile">View Profile</a><a href="#settings">Settings</a></div>
+</header>
+</body>
+</html>
