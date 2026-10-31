@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="03_BookMyShow navigation layout practice project">
+  <title>03_BookMyShow | Internship UI Practice</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- BookMyShow-style two-level navigation -->
+<header class="site-header">
+  <div class="header-top">
+    <a href="#home" class="brand" aria-label="BookMyShow home">book<span>my</span>show</a>
+    <form class="search-area" role="search" onsubmit="return false">
+      <label for="movie-search"><i class="fa-solid fa-magnifying-glass"></i></label>
+      <input type="search" id="movie-search" placeholder="Search for Movies, Events, Plays, Sports and Activities">
+    </form>
+    <div class="header-controls">
+      <button class="city-select" id="cityToggle" type="button" aria-expanded="false">Pune <i class="fa-solid fa-chevron-down"></i></button>
+      <button class="sign-in" id="signIn" type="button">Sign in</button>
+      <button class="hamburger" id="menuToggle" type="button" aria-label="Toggle menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+  <div class="header-bottom" id="secondaryNav">
+    <nav class="main-links" aria-label="Entertainment categories"><a href="#movies">Movies</a><a href="#stream">Stream</a><a href="#events">Events</a><a href="#plays">Plays</a><a href="#sports">Sports</a><a href="#activities">Activities</a></nav>
+    <nav class="other-links" aria-label="Other links"><a href="#listyourshow">ListYourShow</a><a href="#corporates">Corporates</a><a href="#offers">Offers</a><a href="#giftcards">Gift Cards</a></nav>
+  </div>
+  <div class="city-dropdown" id="cityDropdown" hidden><button type="button">Pune</button><button type="button">Mumbai</button><button type="button">Bengaluru</button></div>
+</header>
+</body>
+</html>
