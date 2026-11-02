@@ -1,0 +1,14 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #fff; color: #222; }
+img { display: block; width: 100%; height: 100%; object-fit: cover; }
+main { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+
+.diag { position: relative; height: 340px; background: #fff; }
+  .diag div { position: absolute; inset: 0; background-size: cover; background-position: center; }
+  .d1 { clip-path: polygon(0 0, 36% 0, 27% 24%, 0 72%); background-image: url('images/lake.svg'); }
+  .d2 { clip-path: polygon(1% 80%, 28% 28%, 64% 100%, 1% 100%); background-image: url('images/bridge.svg'); }
+  .d3 { clip-path: polygon(37% 0, 71% 0, 43% 55%, 29% 24%); background: #8a8a8a; display: grid; place-items: center; }
+  .d3 p { position: absolute; left: 38%; top: 12%; width: 28%; color: #fff; font-size: 9px; line-height: 1.5; text-align: center; }
+  .d3 p b { display: block; font-size: 11px; margin-bottom: 6px; }
+  .d4 { clip-path: polygon(44% 58%, 72% 2%, 100% 52%, 100% 100%, 65% 100%); background-image: url('images/mountain.svg'); filter: grayscale(.6); }
+  .d5 { clip-path: polygon(74% 0, 100% 0, 100% 48%); background-image: url('images/sunset.svg'); }
