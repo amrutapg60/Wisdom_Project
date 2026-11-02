@@ -1,0 +1,30 @@
+body {
+    font-family: Arial;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+
+.box1 { background: red; }
+.box2 { background: blue; }
+.box3 { background: green; }
+.box4 { background: orange; }
+.box5 { background: purple; }
+.box6 { background: teal; }
+.box7 { background: brown; }
+.box8 { background: deeppink; }
+.box9 { background: darkcyan; }
